@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.md5cracker.controller.MainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="312.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="48.0" layoutY="111.0" mnemonicParsing="false" text="Choose Dictionary" onAction="#selectDictionaryPath">
+            </Button>
+            <Button disable="true" layoutX="493.0" layoutY="135.0" mnemonicParsing="false" text="Crack" />
+            <Label layoutX="171.0" layoutY="14.0" text="MD5Cracker">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <TextField layoutX="48.0" layoutY="81.0" prefHeight="24.0" prefWidth="501.0" />
+            <Label layoutX="48.0" layoutY="65.0" text="Enter MD5 Hash:" />
+            <Label fx:id="filePath" layoutX="191.0" layoutY="115.0" text="Dictionary: " />
+         </children>
+      </Pane>
+   </children>
+</VBox>
