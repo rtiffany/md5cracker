@@ -4,6 +4,7 @@ import java.io.File;
 public class HashCracker {
 
     private File dictionary;
+    private String hash;
 
     public HashCracker() {
 
@@ -16,6 +17,10 @@ public class HashCracker {
 
     public String getFilePath() {
          return dictionary.getPath();
+    }
+
+    public String yolo() {
+        return "Sup";
     }
 
 }
