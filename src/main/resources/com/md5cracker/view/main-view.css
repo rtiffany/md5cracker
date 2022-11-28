@@ -1,0 +1,15 @@
+.text-input {
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-padding: 10;
+}
+
+.label {
+    -fx-padding: 10;
+}
+
+.text-input:error {
+    -fx-border-color: red;
+}
